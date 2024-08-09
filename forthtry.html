@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="forthtry.css">
+</head>
+<body>
+    <div class="sidebar" id="sidebar">
+        <img src="userw.png" class="user">
+        <a href="javascript:void(0)" class="closebtn" onclick="toggleSidebar()">&times;</a>
+        <a href="#" class="sideitem" style="color: brown;">Beranda</a>
+        <a href="#">Profil</a>
+        <a href="#">Organisasi</a>
+        <a href="#">Permainan<br>Rakyat</a>
+        <a href="#">Olahraga<br>Tradisional</a>
+        <a href="#">Humas</a>
+        <a href="#">Danus</a>
+    </div>
+    <div class="wrapper">
+        <div class="bar-1">
+            <img src="logo1.jpg" class="logo1">
+            <input type="text" placeholder="Search..." class="search">
+            <button class="sidebar-btn" onclick="toggleSidebar()"><img src="menu.png" class="menu-btn"></button>
+        </div>
+    </div>
+
+    <div class="line"></div>
+
+    <div class="main-content">
+        <img src="hugep.png" class="hugep">
+        
+    </div>
+
+    <div class="main-content2">
+        <section class="main-txt">
+            <p>KPOTI bersama dengan Direktorat PAUD Kemendikbud RI mengadakan kegiatan Perayaan Hari Anak Nasional, sekaligus Kick Off acara Paudpedia.<br>
+                Kegiatan dilaksanakan di CIBIS Park Simatupang pada hari Senin, 29 Juli 2024 dan diikuti oleh bebera-</p>
+        </section>
+        <img src="3p.png" class="ppp">
+    </div>
+
+    <button class="more">Baca selengkapnya</button>
+
+    <script>
+        function toggleSidebar() {
+            var sidebar = document.getElementById("sidebar");
+            if (sidebar.style.transform === "translateX(0%)") {
+                sidebar.style.transform = "translateX(-100%)";
+            } else {
+                sidebar.style.transform = "translateX(0%)";
+            }
+        }
+    </script>
+</body>
+</html>
